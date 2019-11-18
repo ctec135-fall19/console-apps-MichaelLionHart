@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace CA2
 {
@@ -10,25 +11,14 @@ namespace CA2
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("********** CA2 **********");
-            //while (args.Length != 0)
-            //{
-            //    string x = Console.ReadLine();
-            //    Console.WriteLine(x);
-            //}
+            Console.WriteLine("********** CA2 **********");
 
-            //foreach (string s in args)
-            //{
-            //    Console.WriteLine(s);
-            //}
-
-            if (args.Length == 0)
-                Console.WriteLine("No args");
-            else
-                foreach (string s in args)
-                {
-                    Console.WriteLine(s);
-                }
+            string s = Console.ReadLine();
+            while (s != null)
+            {
+                Console.WriteLine(s);
+                s = Console.ReadLine();
+            }
         }
     }
 }
